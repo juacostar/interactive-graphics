@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+body{    /* Estilos aplicados para el cuerpo de las páginas */                   
+	background-image: url(../imagenes/paisaje_paipa.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{ /* Estilos aplicados para el menú de navegación*/
+    background-color: #174d93   ;
+    border-radius: 3rem;
+}
+
+button{/* Estilos aplicados para los botones del menú de navegación*/
+    background-color: #174d93;
+    border: none;
+    border-radius: 3rem;
+}
+
+a:link{/* Estilos para los links externos al blog*/
+    text-decoration: cadetblue;
+}
+
+button:hover{ /* Estilos aplicados para cuando el cursos se localice en los botones*/
+    background-color: aqua;
+}
+
+p{ /* Estilos aplicados para los parrafos*/
+    font-weight: bold;
+    color: #101430;
+    text-align: justify;
+}
+
+li:hover{/* Estilos aplicados para los elementos de las listas*/
+    background-color: aqua;
+}
+
+img{ /* Estilos aplicados para las imágenes*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div:hover{/* Estilos aplicados para los encabezados de cada página*/
+    background-color: aqua;
+}
+
+table{/* Estilos aplicados para las tablas*/
+    margin: auto;
+    border: 1px solid black;
+}
+
+td{ /* Estilos aplicados para las filas*/
+    border: 1px solid black;
+}
+
+th{/* Estilos aplicados para las columnas*/
+    border: 1px solid black;
+}
