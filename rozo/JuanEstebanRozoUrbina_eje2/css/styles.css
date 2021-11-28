@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+@font-face {  /* Se define el tipo de fuente que se utilizara */
+    font-family: PT Sans Narrow Regular; /* Nombre que se le dara a la fuente dentro del proyecto */
+    src: url('../fonts/PTSansNarrow-Regular.ttf'); /* Ubicacion del archivo .ttf de la fuente */
+}
+
+/* ----- Estilos generales ----- */
+
+body { /* Estilos que aplican a todo el cuerpo */
+    margin: 0; /* Aplicar margen de 0 para todo el proyecto */
+    font-family: PT Sans Narrow Regular; /* Fuente que se utilizara para todo el proyecto */
+    height: 80%;
+}
+
+html{
+    height: 100%;
+}
+
+a:link { /* Dar estilos a los enlaces */
+    text-decoration: none; /* Quitar cualquier decaracion (estilo por defecto) para los enlaces */
+}
+
+/* ----- Panel principal ----- */
+
+.page_title { /* Estilos aplicados al panel principal */
+    text-align: center; /* Centrar el texto */
+    height: 100%; /* Se define el alto del panel principal para que sea de 500 pixeles*/
+    background-image: url('../images/title_background.jpg'); /* Imagen de fondo del panel */
+    background-attachment: fixed; /* Define la imagen del fondo del panel principal para que sea fija dentro de la pantalla */
+    background-repeat: no-repeat; /* No permitir que se repita la imagen de fondo para ajustarlo al tamano */
+    background-position: center 50%; /* Posicion centrada de la imagen que se utiliza para el fondo y que parte de la imagen se mostrara */
+}
+
+.page_title h1{ /* Estilos aplicados al titulo del panel principal */
+    padding: 10%; /* Relleno de 100 pixeles sobre cada lado */
+    margin: 0; /* Sin margen */
+}
+
+.page_title h1 a { /* Estilos aplicados sobre el vinculo del titulo principal */
+    font-weight: bolder; /* Grueso de la letra */
+    font-size: 50px; /* Tamano de la letra */
+    color: white; /* Color de la letra */
+}
+
+.page_title h1 a:hover { /* Estilos del vinculo del titulo cuando el cursor este sobre el mismo */
+    color: #0066b3; /* Color del vinculo cuando el cursor este encima */
+}
+
+
+/* ----- Barra de navegacion ----- */
+
+.menu_nav { /* Estilos sobre la barra de navegacion */
+	text-align: center; /* Centrar todos los elementos (texto) de la barra de navegacion */
+    background-color: #dd0129; /* Color de fondo */
+    padding: 10px; /* Relleno de la barra de navegacion en cada lado */
+}
+
+.nav_button { /* Estilos aplicados sobre cada uno de los botones de la barra de navegacion */
+    transition: all .5s ease-out; /* Define la transicion cuando el cursor este encima: propiedades CSS sobre las que la transicion debe aplicarse - duracion de la transicion - la transicion sera rapida al principio e ira mas lento despues */
+    color: white; /* Color de la letra */
+    font-size: 25px; 
+    padding: 11px;
+}
+
+.nav_button:hover { /* Estilos para los botones del menu de navegacion cuando el cursor este encima */
+    background-color: white;
+    color: #dd0129;
+}
+
+/* Separador */
+.separator {
+    display: none;
+    margin: 0;
+    border: 20px solid #dd0129;
+}
+
+/* Pie de pagina */
+
+.footer { /* Estilos sobre el pie de pagina */
+    background-color: #222623;
+    text-align: center;
+    min-height: auto;
+}
+
+.footer_element { /* Estilos sobre cada elemento dentro del contenedor del pie de pagina */
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif; /* Se define una lista de fuentes para aplicar a cada elemento del pie de pagina (si no se puede estableces la primera se tomara la segunda y asi sucesivamente) */
+    margin:auto; /* el margen izquierdo y derecho tomarán el margen automático de acuerdo con el ancho del elemento y el ancho del contenedor */
+    color: white;
+}
+
+/* Contenedor horizontal */
+
+.horizontal_card_container { /* Estilos para los contenedores horizontales */
+    max-width: 100%; /* Se establece un ancho maximo del 100 porciento de la pagina */
+    display: flex; /* tipo de visualizacion del contenedor de tipo flex que permite distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación */
+    flex-direction: row; /* Eje pricipal sobre el cual seran ubicados los elementos (horizontalmente) */
+    margin: 25px;
+    position: relative; /* Posicion relativa a los otros elementos de la pagina */
+    box-shadow: 5px 5px 18px 9px rgba(186,186,186,0.39); /* Sombra del contenedor: offset horizontal - offset vertical - desenfoque - color */
+    border-radius: 15px; /* Borde circular */
+}
+
+.horizontal_card_container hr { /* Estilos para el separador del contenedor horizontal */
+    border: 1px solid #dd0129; /* Tamano - tipo - color */
+}
+
+.horizontal_card_container img { /* Estilos sobre las imagenes del contenedor horizontal */
+    max-width: 30%;
+    border-radius: 15px 0 0 15px; /* Borde de la imagen */
+    padding-right: 10px; /* Relleno a la derecha de la imagen */
+}
+
+.horizontal_card_container p { /* Estilos sobre los parrafos del contenedor horizontal */
+    padding: 10px;
+    text-align: justify; /* Justicar el texto */
+    position: relative;
+    font-size: large; /* Tamano de la fuente grande */
+}
+
+/* Contenedor del mapa */
+
+.maps { /* Estilos sobre el contenedor del mapa */
+    display: flex;
+    justify-content: center;
+}
+
+.maps iframe { /* Estilos sobre las el mapa */
+    margin: 25px;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Contenedor vertical */
+
+.vertical_card_container { /* Estilos contenedor vertical */
+    max-width: 100%;
+    margin: 25px;
+    position: relative;
+    box-shadow: 5px 5px 18px 9px rgba(186,186,186,0.39);
+    border-radius: 15px;
+}
+
+.vertical_card_container h2 {
+    max-width: 100%;
+    background-color: #dd0129;
+    text-align: center;
+    border-radius: 15px  15px 0 0;
+    margin: auto;
+}
+
+.vertical_card_container h2 a {
+    color: white;
+}
+
+.vertical_card_container p {
+    padding: 20px;
+    text-align: justify;
+    font-size: large;
+}
+
+.vertical_card_container table {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.vertical_card_container table thead tr { /* Estilos sobre las filas de la tabla del contenedor vertical */
+    background-color: #222623;
+    color: white;
+}
+
+.vertical_card_container table tbody tr:nth-of-type(even) { /* Estilos sobre las filas pares de la tabla */
+    background-color: #ede9e8;
+}
+
+.vertical_card_container table tbody tr:hover {
+    background-color: #a8a8a8;
+    color: white;
+}
+
+.vertical_card_container p img {
+    max-width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.vertical_card_container p .left_img {
+    float: left; /* Posicion flotante a la izquierda la imagen dentro del parrafo */
+}
+
+.vertical_card_container p .right_img {
+    float: right;  /* Posicion flotante a la derecha la imagen dentro del parrafo */
+}
+
+.vertical_card_container ol li {
+    padding: 5px;
+}
+
+.vertical_card_container a:hover {
+    color: #0066b3;
+}
+
+.vertical_card_container a {
+    color: black;
+}
+
+/* Subtitulos */
+
+.content_subtitle { /* Estilos sobre los subtitulos de cada pagina */
+    max-width: 100%;
+    text-align: center;
+    background-color: #dd0129;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.content_subtitle a {
+    color: white;
+}
+
+.content_subtitle a:hover {
+    color: #0066b3;
+}
+
+/* Contenedor de cartas con imagenes */
+
+.vertical_img_card {
+    max-width: 20%;
+    text-align: center;
+}
+
+.vertical_img_card img{
+    max-width: 80%;
+    border-radius: 0 20px 0 20px;
+}
+
+.vertical_img_card p {
+    padding: 15px;
+    text-align: justify;
+    font-size: medium;
+}
+
+/* Submenu */
+
+.submenu {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px;
+    position: relative;
+}
+
+.submenu h4 a {
+    margin: 15px;
+    padding: 10px;
+    background-color: #dd0129;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+/* Bandera flotante fija de Munich */
+
+.munich_flag_bar {
+    position: fixed; /* Posicion fija dentro de la pagina */
+    top: 80%; /* Distancia del tope de la pagina */
+    transform: translateY(-50%); /* Hace que el elemento interior retroceda una distancia de la mitad de la altura del elemento interior. */
+}
+  
+.munich_flag_bar a {
+    display: block; /* Definir el vinculo como un elemento de bloque  */
+    text-align: center;
+    padding: 10px;
+    transition-duration: 0.5s; /* Duracion de la transicion cuando el cursor este encima */
+    color: white;
+    width: 3px;
+}
+  
+.munich_flag_bar a:hover {
+    padding: 10px 15px;
+}
+
+.upper_flag {
+    background-color: black;
+}
+
+.bottom_flag {
+    background-color: #ffe701;
+}
+
+/* Mapa de navegacion */
+.map_nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.map_nav img {
+    padding: 15px;
+}
+
+/* Mini menu */
+#btn-menu {
+    display: none;
+} 
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+} 
+header {
+    width: 100%;
+	z-index: 10;
+} 
+header label:hover {
+    cursor: pointer;
+}
+
+/* RWD Styles */
+
+/* Telefono celular (480-800) */
+@media only screen and (max-width: 800px) {
+
+    .menu_nav {
+        position: absolute;
+        top: 50px;
+        background: rgb(252, 25, 25);
+		z-index: 30;
+        width: 20%;
+        margin-left: -60%;
+        transition: all 2s;
+    }
+
+    #btn-menu:checked ~ .menu_nav {
+        margin: 1px;
+    } 
+
+    header label{
+        display: block;
+    } 
+
+    .nav_button {
+        display: block;
+        font-size: 20px;
+    }
+
+    .separator {
+        display: block;
+    }
+
+    .horizontal_card_container {
+        display: block;
+        margin: 15px;
+    }
+
+    .horizontal_card_container p {
+        font-size: smaller;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .horizontal_card_container img {
+        padding-bottom: 5px;
+        padding-right: 0;
+        max-width: 100%;
+        border-radius: 15px 15px 0 0;
+        margin: auto;
+        display: block;
+    }
+
+    .horizontal_card_container hr {
+        margin: 0 10px 0 10px;
+    }
+
+    .munich_flag_bar {
+        display: none;
+    }
+
+    .vertical_card_container p {
+        padding: 10px;
+        font-size: smaller;
+    }
+
+    .vertical_card_container p .left_img {
+        float: none;
+        display: block;
+        margin: auto;
+        max-width: 50%;
+        padding-bottom: 5px;
+    }
+
+    .vertical_card_container p .right_img{
+        float: none;
+        display: block;
+        margin: auto;
+        max-width: 50%;
+        padding-bottom: 5px;
+    }
+
+    .vertical_img_card {
+        max-width: 100%;
+    }
+    .vertical_img_card img {
+        width: 50%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+    .map_nav img {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
+}
+/* Tableta o portatil (800-1200) */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .horizontal_card_container p {
+        font-size: medium;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .horizontal_card_container img {
+        image-rendering: pixelated;
+    }
+
+    .vertical_card_container p {
+        padding: 10px;
+        font-size: medium;
+    }
+
+    
+    .vertical_card_container p img{
+        width: 40%;
+    }
+    .vertical_img_card p {
+        padding: 10px;
+        font-size: small;
+    }
+}

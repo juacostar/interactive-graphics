@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: c7nazara;
+    src: url('../fuentes/c7nazara.ttf');
+}
+
+
+body{    /* Estilos aplicados para el cuerpo de las páginas */                   
+    margin: 0; /* Margen 0 */
+    font-family: c7nazara; /* Fuente del texto de la página */
+    height: 80%;
+}
+
+
+html{
+    height: 100%;
+}
+
+.main_title{ /* Estilos para el título principal de la página*/
+    text-align: center;
+    height: 100%;
+    background-image: url('../imagenes/paipa_noche.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.main_title h1{ /* Estilos para el tecto del título principal de la página*/
+    padding: 10%;
+    margin: 0;
+    font-size: 50px;
+    color: white;
+}
+
+nav{ /* Estilos aplicados para el menú de navegación*/
+    /*background-color: #174d93   ;
+    border-radius: 3rem;*/
+    text-align: center;
+    background-color: #008e50;
+}
+
+.nav_item{
+    font-size: 25px;
+    text-align: center;
+    background-color: #008e50;
+    color: white;
+    border-style: hidden;
+    font-family: c7nazara; /* Fuente del texto de los botones del menú de navegación */
+}
+
+.nav_item:hover{ /* Estilo al momento de pasar el mouse por un item del menú de navegación*/
+    background-color: white;
+    color: black;
+}
+
+p{ /*Estilo para los párrafos*/
+    font-family: sans-serif;
+}
+
+.image_introduction{ /*Estilo para la imagen de introducción*/
+    float: left; /* Ubicación hacia la izquierda*/
+    margin: 10px;
+    margin-top: 0%;
+}
+
+
+
+a:link{/* Estilos para los links externos al blog*/
+    text-decoration: cadetblue;
+}
+
+
+li:hover{/* Estilos aplicados para los elementos de las listas*/
+    background: #f4ff91;
+}
+
+img{ /* Estilos aplicados para las imágenes*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div:hover{/* Estilos aplicados para los encabezados de cada página*/
+    /*background: #f4ff91;*/
+}
+
+table{/* Estilos aplicados para las tablas*/
+    margin: auto;
+    border: 1px solid black;
+}
+
+td{ /* Estilos aplicados para las filas*/
+    border: 1px solid black;
+}
+
+th{/* Estilos aplicados para las columnas*/
+    border: 1px solid black;
+}
