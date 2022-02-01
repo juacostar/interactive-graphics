@@ -1,0 +1,64 @@
+<!-- Ejercicio #2 Grafica Interactiva - Universidad Nacional de Colombia - Juan Esteban Rozo Urbina -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Codificacion de caracteres utilizada -->
+    <meta lang="en"> <!-- Definicion del lenguaje -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munich</title> <!-- Titulo de la pagina -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css"> <!-- Hoja de estilos -->
+    <link rel="icon" href="images/favicon.ico"> <!-- Icono de la pagina -->
+    <script src="js/map.js"></script>
+</head>
+<body>
+    <div class="page_title"> <!-- Titulo de la pagina posicionado en el panel principal -->
+        <h1><a href="index.html" target="_self">Munich</a></h1> <!-- Vinculo del titulo que lleva a la pagina de inicio -->
+    </div>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="images/menu.png" width="30px"></label>
+        <nav class="menu_nav">
+            <a class="nav_button" href="location.html" target="_self">Location</a>
+            <a class="nav_button" href="population.html" target="_self">Population</a>
+            <a class="nav_button" href="events.html" target="_self">Events & Tourism</a>
+            <a class="nav_button" href="history.html" target="_self">History</a>
+            <a class="nav_button" href="map.html" target="_self">Map</a>
+            <a class="nav_button" href="bibliography.html" target="_self">Bibliography</a>
+        </nav>
+    </header>
+
+    <hr class="separator">  
+
+    <!-- Interactive Map & Descriptions -->
+    <div class="interactive_map_container">
+        <h2 id="munich_inter" class="content_subtitle"><a href="#munich_inter">Munich's interactive map</a></h2>
+        <div class="munich_map">
+            <img class="map" src="images/map_munich.jpg" alt="Munich map">
+            <a href="#Info" target="_self"><img class="map_button home" onclick="displayImgText('Home')" src="images/home.png" alt="Home"></a> <!-- Passing a parameter in order the function to know what values (text, img or video url) to use -->
+            <a href="#Info" target="_self"><img class="map_button button1" onclick="displayVideoText('Olympiapark')" src="images/play.png" alt="Olympiapark"></a>
+            <a href="#Info" target="_self"><img class="map_button button2" onclick="displayImgText('BMW_Museum')" src="images/play.png" alt="BMW Museum"></a>
+            <a href="#Info" target="_self"><img class="map_button button3" onclick="displayVideoText('Tierpark')" src="images/play.png" alt="Tierpark Hellabrunn (Hellabrunn Zoo)"></a>
+            <a href="#Info" target="_self"><img class="map_button button4" onclick="displayImgText('Peterskirche')" src="images/play.png" alt="Peterskirche (St. Peter's Church)"></a>
+            <a href="#Info" target="_self"><img class="map_button button5" onclick="displayImgText('Residenz')" src="images/play.png" alt="Munich Residenz"></a>
+        </div>
+        <hr class="map_separator">
+        <div id="Info" class="munich_map_info">
+            <img id="info_img" src="images/welcome.jpg" alt="Punto">
+            <iframe id="info_video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <hr>
+            <p id="text_info"><b>Interactive map</b> <br> If you click on some of the buttons you will be able to visit different palces in Munich, have a lot of fun! Plese click on the home button in case you want to return here.</p>
+        </div>
+    </div>
+
+    <div class="munich_flag_bar"> <!-- Barra lateral fija que representa la bandera de Munich -->
+        <a href="https://www.muenchen.de/int/en.html" target="_blank" class="upper_flag"></a> <!-- Vinculo que lleva a la pagina oficial de la ciudad de Munich -->
+        <a href="https://www.muenchen.de/int/en.html" target="_blank" class="bottom_flag"></a>
+    </div>
+
+    <div class="footer"> <!-- Pie de pagina -->
+        <h5 class="footer_element">Juan Esteban Rozo Urbina</h5> <!-- Autor de la pagina -->
+        <h6 class="footer_element">Universidad Nacional de Colombia</h6> <!-- Institucion educativa -->
+        <a href="mailto:jrozou@unal.edu.co"><img src="images/gmail.png" alt="Send a mail!"></a> <!-- Vinculo para enviar un correo al autor, se agrega un icono -->
+    </div>
+</body>
+</html>

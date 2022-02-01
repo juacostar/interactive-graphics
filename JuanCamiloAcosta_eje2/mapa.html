@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="es">
+        <title>Conociendo a Paipa</title><!-- Título de la página-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilos.css" type="text/css"> <!-- Llamado a la hoja de estilos css-->
+        <script src="js/mapa.js"></script>
+    </head>
+    <body>
+        <div class="main_title">
+            <h1>Paipa</h1>
+        </div>
+        <header>
+            <!--Botón de despliegue del menú de navegación-->
+            <input type="checkbox" id="button_menu">
+            <label for="button_menu"><img src="imagenes/menu.png" width="30px"></label>
+            <nav><!-- Menú de navegación -->
+                <a href="index.html" target="_self"><button class="nav_item">Inicio</button></a><!-- botón página de inicio-->
+                <a href="espacio.html" target="_self"><button class="nav_item">Espacio</button></a><!-- botón página de espacio y ubicación-->
+                <a href="personajes.html" target="_self"><button class="nav_item">Personajes</button></a><!-- botón página de personajes-->
+                <a href="actividades.html" target="_self"><button class="nav_item">Actividades</button></a><!-- botón página de actividades-->
+                <a href="historia.html" target="_self"><button class="nav_item">Historia</button></a><!-- botón página de historia-->
+                <a href="mapa.html" target="_self"><button class="nav_item">Mapa</button></a><!-- botón página de historia-->
+                <a href="referencias.html" target="_self"><button class="nav_item">Referencias</button></a><!-- botón página de referencias-->
+            </nav>
+        </header>
+
+
+        <div class="map_container">
+            <h2 class="subtitle_map_container">Mapa interactivo de Paipa</h2>
+            <div class="paipa_map">
+                <img class="map_image" src="imagenes/mapa_paipa.jpg" alt="Mapa de Paipa">
+                <a href="#info_map" target="_self"><img class="button_icon_map lago_sochagota" onclick="displayImgText('Lago_Sochagota')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
+
+            </div>
+            <hr class="info_separator">
+            <div id="info_map" class="horizontal_container">
+                <img id="img_resource" alt="">
+                <!--<iframe id="info_video_map"  title="Vídeo informativo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <hr>
+                <p id="text"></p>
+            </div>
+        </div>
+    </body>
+</html>

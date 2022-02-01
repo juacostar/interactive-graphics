@@ -176,6 +176,73 @@ header label:hover{
     cursor: pointer;
 }
 
+/* Estilos para el mapa interactivo */
+
+.map_container{
+    max-width: 100%;
+    margin: 1% auto;
+    position: relative;
+    border-radius: 1px;
+}
+
+.subtitle_map_container{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paipa_map{
+    position:relative;
+	width: 75%;
+	padding: 5%;
+	margin:auto;
+    margin-bottom:1em;
+	display:block;
+}
+
+.map_image{
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    width: 380px;
+    height:530px;
+}
+
+.button_icon_map{
+    width: 45px;
+    height: 46px;
+}
+
+.paipa_info_map{
+    max-width: 100%; 
+    display: flex;  
+    flex-direction: row; 
+    position: relative;
+    padding: 1%;
+    
+}
+
+
+.paipa_info_map p{
+    padding: 1%;
+    text-align: justify;
+    font-size: large;
+}
+
+
+.paipa_info_map hr{
+    margin: 1%;
+    border: 1px solid #008e50;
+}
+
+.info_video_map{
+    display: none;
+    width: 100em;
+    height: 30em;
+    margin: auto;
+}
+
+
 /*Estilos para pantalla de teléfono celular (480-800 px)*/
 @media only screen and (max-width: 800px) {
     /*Menú de navegación*/
