@@ -209,8 +209,44 @@ header label:hover{
 }
 
 .button_icon_map{
-    width: 45px;
-    height: 46px;
+    position: absolute;
+    z-index: 2%;
+    width: 22.5px;
+    height: 23px;
+}
+
+.button_info_map{
+    position: absolute;
+    z-index: 2%;
+    width: 22.5px;
+    height: 19.5px;
+    bottom:8%;
+	left:30%;
+}
+
+.lago_sochagota{
+    bottom:34%;
+	left:50%;
+}
+
+.termales{
+    bottom:31%;
+	left:52%;
+}
+
+.laguna_seca{
+    bottom:45%;
+	left:51%;
+}
+
+.pantano_vargas{
+    bottom:25%;
+	left:56%;
+}
+
+.palermo{
+    bottom:63%;
+	left:42%;
 }
 
 .paipa_info_map{
@@ -222,6 +258,10 @@ header label:hover{
     
 }
 
+.paipa_info_map img{
+    margin:auto;
+    display: block;
+}
 
 .paipa_info_map p{
     padding: 1%;
@@ -231,13 +271,13 @@ header label:hover{
 
 
 .paipa_info_map hr{
-    margin: 1%;
+    margin: 5%;
     border: 1px solid #008e50;
 }
 
 .info_video_map{
     display: none;
-    width: 100em;
+    width: 50em;
     height: 30em;
     margin: auto;
 }
