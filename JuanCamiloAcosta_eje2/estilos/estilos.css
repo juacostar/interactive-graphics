@@ -178,6 +178,7 @@ header label:hover{
 
 /* Estilos para el mapa interactivo */
 
+/* Estilos para el div que contiene toda la información del mapa*/
 .map_container{
     max-width: 100%;
     margin: 1% auto;
@@ -185,12 +186,14 @@ header label:hover{
     border-radius: 1px;
 }
 
+/* Estilos para el subtitulo del mapa */
 .subtitle_map_container{
     margin: auto;
     margin-top: 20px;
     text-align: center;
 }
 
+/* Estilos para el div que contiene la imagen del mapa de Paipas*/
 .paipa_map{
     position:relative;
 	width: 75%;
@@ -200,6 +203,7 @@ header label:hover{
 	display:block;
 }
 
+/* Estilos para la imagen del mapa de Paipa*/
 .map_image{
     margin: auto;
     display: block;
@@ -208,6 +212,7 @@ header label:hover{
     height:530px;
 }
 
+/* Estilos para el ícono de cada dirección dentro del mapa*/
 .button_icon_map{
     position: absolute;
     z-index: 2%;
@@ -215,6 +220,7 @@ header label:hover{
     height: 23px;
 }
 
+/* Estilos para el botón de información acerca del mapa interactivo*/
 .button_info_map{
     position: absolute;
     z-index: 2%;
@@ -224,6 +230,7 @@ header label:hover{
 	left:30%;
 }
 
+/* Estilos de cada uno de los botones que se encuentran dentro del mapa interactivo*/
 .lago_sochagota{
     bottom:34%;
 	left:50%;
@@ -249,6 +256,7 @@ header label:hover{
 	left:42%;
 }
 
+/**/
 .paipa_info_map{
     max-width: 100%; 
     display: flex;  
@@ -258,26 +266,17 @@ header label:hover{
     
 }
 
-.paipa_info_map img{
+/* Estilos para la imagen dentro de la seción de información del mapa interactivo*/
+.horizontal_container img{
     margin:auto;
     display: block;
 }
 
-.paipa_info_map p{
-    padding: 1%;
-    text-align: justify;
-    font-size: large;
-}
 
-
-.paipa_info_map hr{
-    margin: 5%;
-    border: 1px solid #008e50;
-}
-
-.info_video_map{
+/* Estilos para la etiqueta que emite el video*/
+#info_video_map{
     display: none;
-    width: 50em;
+    width: 300em;
     height: 30em;
     margin: auto;
 }
@@ -329,6 +328,12 @@ header label:hover{
         max-width: 100%;
     }
 
+    /*Estilos para el mapa interactivo*/
+    #info_video_map{
+        width: 15em;
+        height: 10em;
+    }
+
 
 }
 
@@ -341,6 +346,13 @@ header label:hover{
 
     .horizontal_container img{
         image-rendering: pixelated;
+    }
+
+
+    /* Estilos mapa interactivo*/
+    #info_video {
+        width: 150em;
+        height: 20em;
     }
 
 }

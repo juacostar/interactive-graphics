@@ -29,27 +29,33 @@
         </header>
 
 
+        <!-- Contenedor de la sección del mapa interactivo -->
         <div class="map_container">
             <h2 class="subtitle_map_container">Mapa interactivo de Paipa</h2>
+            <!--Imagen del mapa interactivo con sus botones-->
             <div class="paipa_map">
                 <img class="map_image" src="imagenes/mapa_paipa.jpg" alt="Mapa de Paipa">
                 <a href="#info_map" target="_self"><img class="button_icon_map lago_sochagota" onclick="displayImgText('Lago_Sochagota')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
                 <a href="#info_map" target="_self"><img class="button_icon_map termales" onclick="displayImgText('Termales')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
                 <a href="#info_map" target="_self"><img class="button_icon_map laguna_seca" onclick="displayImgText('Laguna_Seca')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
-                <a href="#info_map" target="_self"><img class="button_icon_map pantano_vargas" onclick="displayImgText('Lago_Sochagota')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
+                <a href="#info_map" target="_self"><img class="button_icon_map pantano_vargas" onclick="displayVideoText('Pantano_Vargas')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
                 <a href="#info_map" target="_self"><img class="button_icon_map palermo" onclick="displayImgText('Palermo')" src="imagenes/icono_ubicacion.jpg" alt=""></a>
                 <a href="#info_map" target="_self"><img class="button_info_map info" onclick="displayImgText('home')" src="imagenes/boton_info.jpg" alt=""></a>
 
             </div>
             <hr class="info_separator">
+            <!--Sección de información del mapa interactivo-->
             <div id="info_map" class="horizontal_container">
-                <img id="img_resource" alt="">
-                <!--<iframe id="info_video_map"  title="Vídeo informativo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <img id="img_resource" alt="Imágenes mapa interactivo" src="imagenes/Paipa_Boyaca.jpg" width="25%">
+                <!--Etiqueta para el video de la sección del mapa interactivo-->
+                <iframe id="info_video_map" title="Vídeo informativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <hr>
-                <p id="text"></p>
+                <p id="text"><b>Mapa interactivo de Paipa</b> <br> El mapa interactivo de Paipa es un resumen sobre la gran cantidad de lugares turísticos que contiene el municipio, dada us gran riqueza ambiental en cuanto a biodiversidad, histórica, agrónoma, entre otros lo que la hace ser la capital turística del departamento de Boyacá.</p>
             </div>
         </div>
     </body>
+
+    <!-- Footer de la página -->
     <div class="footer">
         <h5 class="footer_item">Desarrollado por</h5>
         <h6 class="footer_item">Juan Camilo Acosta</h6>
